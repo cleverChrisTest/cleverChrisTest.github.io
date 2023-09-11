@@ -4,6 +4,7 @@ import { createCardGroup } from './cardGenerator.js';
 import { scrollEffect, scrollUpButtonEffect } from './scrollEffect.js';
 
 function loadKnowledgeSection(){
+    let url = "https://raw.githubusercontent.com/cleverChrisTest/Portfolio/main/Web_php/php/info.json";
     let infoTable = document.getElementById("infoTable");
 
     fecthUrl(url, (data) => {
@@ -15,8 +16,6 @@ function loadKnowledgeSection(){
 }
 
 function init() {
-    let url = "https://raw.githubusercontent.com/cleverChrisTest/Portfolio/main/Web_php/php/info.json";
-
     let img1 = "https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
     let img2 = "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
