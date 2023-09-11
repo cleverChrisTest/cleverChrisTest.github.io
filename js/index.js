@@ -8,7 +8,6 @@ function loadKnowledgeSection(){
     let infoTable = document.getElementById("infoTable");
 
     fecthUrl(url, (data) => {
-        console.log("conocimientos:", data);
         let table = createCardGroup(data);
         table.classList.add("table", "table-dark");
         infoTable.appendChild(table);
@@ -39,7 +38,6 @@ function init() {
 
     loadKnowledgeSection();
     
-    console.log("experiencia:");
     tarjetas.append(createCardGroup(arr));
     document.querySelectorAll("section")[0].classList.add("mostrar");
 
