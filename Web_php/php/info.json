@@ -1,0 +1,35 @@
+[
+    {
+        "title": "HTML",
+        "description": "2 años"
+    },
+    {
+        "title": "CSS",
+        "description": "2 año"
+    },
+    {
+        "title": "Javascript",
+        "description": "1 año"
+    },
+    {
+        "title": "Java",
+        "description": "Clases, objetos, herencia, tipos de datos, genéricos y paquetes. Excepciones, entrada/salida básica, concurrencia, expresiones regulares y el entorno de la plataforma. Expersiones lambda."
+    },
+    {
+        "title": "Spring Framework",
+        "description": "1 mes"
+    },
+    {
+        "title": "Spring Data",
+        "description": "1 mes"
+    },
+    {
+        "title": "Spring Security",
+        "description": "1 mes"
+    },
+    {
+        "title": "Vue.js",
+        "description": "Conceptos básicos de Vuejs."
+    }
+
+]
