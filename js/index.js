@@ -1,5 +1,4 @@
 import { fecthUrl } from './funciones.js';
-import { createTable } from './createTable.js';
 import { createCardGroup } from './cardGenerator.js';
 import { scrollEffect, scrollUpButtonEffect } from './scrollEffect.js';
 
@@ -39,7 +38,7 @@ function init() {
     ];
 
     loadKnowledgeSection();
-    
+
     console.log("experiencia:");
     tarjetas.append(createCardGroup(arr));
     document.querySelectorAll("section")[0].classList.add("mostrar");
