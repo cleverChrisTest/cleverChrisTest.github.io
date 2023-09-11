@@ -3,6 +3,17 @@ import { createTable } from './createTable.js';
 import { createCardGroup } from './cardGenerator.js';
 import { scrollEffect, scrollUpButtonEffect } from './scrollEffect.js';
 
+function loadKnowledgeSection(){
+    let infoTable = document.getElementById("infoTable");
+
+    fecthUrl(url, (data) => {
+        console.log("conocimientos:", data);
+        let table = createCardGroup(data);
+        table.classList.add("table", "table-dark");
+        infoTable.appendChild(table);
+    });
+}
+
 function init() {
     let url = "https://raw.githubusercontent.com/cleverChrisTest/Portfolio/main/Web_php/php/info.json";
 
@@ -27,16 +38,8 @@ function init() {
 
     ];
 
-    let infoTable = document.getElementById("infoTable");
-
-    fecthUrl(url, (data) => {
-        console.log("conocimientos:", data);
-        let table = createCardGroup(data);
-        table.classList.add("table", "table-dark");
-        infoTable.appendChild(table);
-    });
-
-
+    loadKnowledgeSection();
+    
     console.log("experiencia:");
     tarjetas.append(createCardGroup(arr));
     document.querySelectorAll("section")[0].classList.add("mostrar");
