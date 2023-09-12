@@ -626,11 +626,12 @@ footer a:visited {
   nav .container-fluid {
     display: none;
   }
-
+  .navbar .navbar-social .navbar-social-container {
+    padding: 0.5rem 0rem;
+  }
   .card-group {
     padding: 0rem;
   }
-
   main .section-img .main-wrapper {
     margin: 0;
     padding: 0 4rem;
