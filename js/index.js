@@ -46,4 +46,3 @@ function init() {
 };
 
 window.addEventListener('load', init);
-alert("Está viendo una página que está aún está en construcción.");
