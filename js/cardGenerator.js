@@ -23,10 +23,6 @@ export function createCardGroup(arrayOfObjects){
 }
 
 function createCard(item){
-    
-
-    
-
     let card = 
         `<div class="card">
             ${addImage(item)}
@@ -41,7 +37,7 @@ function createCard(item){
 
 function addImage(item){
     if(item.button !== undefined){
-        return `<img class="card-img-top" src="${item.img[0]}" alt="${item.img[1]}">`;
+        return `<div class="card-img-top" style="background-image: url(${item.img[0]})" alt="${item.img[1]}"></div>`;
     } else {
         return "";
     }

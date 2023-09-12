@@ -35,7 +35,7 @@ function init() {
 
     ];
 
-    loadKnowledgeSection();
+    /*loadKnowledgeSection();*/
     
     tarjetas.append(createCardGroup(arr));
     document.querySelectorAll("section")[0].classList.add("mostrar");

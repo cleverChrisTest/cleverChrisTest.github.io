@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./sass/style.css">
     <script src="js/index.js" type="module"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="..." crossorigin="anonymous" />
 
 </head>
 
@@ -32,9 +33,7 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="navbar-brand">
-                    En desarollo...
-                </div>
+                <div class="navbar-brand"></div>
                 <div class="items expand">
                     <ul class="navbar-list">
                         <li class="navbar-list-item"><a class="navbar-link" href="#perfil">Perfil</a></li>
@@ -65,7 +64,7 @@
             </div>
         </section>
         <div class="my-3">
-            
+
         </div>
         <section id="conocimientos" class="section-content">
             <article class="content-center-main">
@@ -87,9 +86,25 @@
                 </div>
                 <div class="content-media">
                     <div class="media-text">
-                        <p>Colocar aquí un formulario para enviar un email.</p>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" id="name"
+                                    aria-describedby="name" placeholder="Introduce tu nombre..." maxlength="20" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email"
+                                    aria-describedby="emailHelp" placeholder="Introduce tu email..." required>
+                            </div>
+                            <div class="form-check">
+                                <label class="check-label" for="privacy">Política de Protección de Datos</label>
+                                <input type="checkbox" class="check-input" id="privacy"required>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </form>
                         <p>
-                            Linkedin: <a class="fa-brands fa-linkedin fa-lg" href="#"></a>
+                            
                         </p>
                     </div>
                     <div class="media-img">
@@ -104,10 +119,7 @@
         <section class="border-bottom-1">
             <article class="footer-social ">
                 <div>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-                <div>
-                    Imágenes
+                    
                 </div>
             </article>
         </section>
@@ -115,7 +127,9 @@
             <article>
                 <h5>Seccion 1</h5>
                 <ul>
-                    <li>Concepto 1</li>
+                    <li>Linkedin: 
+                        <a class="fa-brands fa-linkedin fa-lg" href="#" style="color: rgb(44, 44, 167)"></a>
+                    </li>
                     <li>Concepto 2</li>
                     <li>Concepto 3</li>
                     <li>Concepto 4</li>
@@ -152,6 +166,10 @@
                     <li>Enlace 5</li>
                 </ul>
             </article>
+        </section>
+        <section class="d-none">
+            <h4>Disclaimer</h4>
+            <p>This web was created by Christian and is a show off of my knowledge. It might contain errors and security issues.</p>
         </section>
     </footer>
 </body>
