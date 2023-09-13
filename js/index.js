@@ -3,7 +3,7 @@ import { createCardGroup } from './cardGenerator.js';
 import { scrollEffect, scrollUpButtonEffect } from './scrollEffect.js';
 
 function loadKnowledgeSection(){
-    let url = "https://raw.githubusercontent.com/cleverChrisTest/Portfolio/main/Web_php/php/info.json";
+    let url = "https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/php/info.json";
     let infoTable = document.getElementById("infoTable");
 
     fecthUrl(url, (data) => {
@@ -35,7 +35,7 @@ function init() {
 
     ];
 
-    /*loadKnowledgeSection();*/
+    loadKnowledgeSection();
     
     tarjetas.append(createCardGroup(arr));
     document.querySelectorAll("section")[0].classList.add("mostrar");
