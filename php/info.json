@@ -1,6 +1,7 @@
 [
     {
         "title": "HTML",
+        "img": "../media/html.png",
         "description": "2 años"
     },
     {
@@ -9,6 +10,7 @@
     },
     {
         "title": "Javascript",
+        "img": "../media/javascript.png",
         "description": "1 año"
     },
     {
