@@ -18,8 +18,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  right: 2rem;
   border-radius: 2rem;
   font-size: 2rem;
   background-color: var(--primary);
@@ -31,6 +29,9 @@
   cursor: pointer;
   height: 3rem;
   width: 3rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
 }
 
 .title-primary {

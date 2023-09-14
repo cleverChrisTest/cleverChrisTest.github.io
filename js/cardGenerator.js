@@ -36,10 +36,10 @@ function createCard(item){
 }
 
 function addImage(item){
-    if(item.button !== undefined){
+    if(item.img !== undefined){
         return `<div class="card-img-top" style="background-image: url(${item.img[0]})" alt="${item.img[1]}"></div>`;
     } else {
-        return "";
+        return `<div class="card-img-top" style="background-image: url()" alt="not found"></div>`;
     }
 }
 

@@ -1,7 +1,7 @@
 [
     {
         "title": "HTML",
-        "img": "['../media/html.png', 'html logo'",
+        "img": "['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/html.png', 'html logo'",
         "description": "2 años"
     },
     {
@@ -10,11 +10,12 @@
     },
     {
         "title": "Javascript",
-        "img": "['../media/javascript.png', 'javascript logo']",
+        "img": "['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/javascript.png', 'javascript logo']",
         "description": "1 año"
     },
     {
         "title": "Java",
+        "img": "['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/Sin%20t%C3%ADtulo.png', '']",
         "description": "Clases, objetos, herencia, tipos de datos, genéricos y paquetes. Excepciones, entrada/salida básica, concurrencia, expresiones regulares y el entorno de la plataforma. Expersiones lambda."
     },
     {
