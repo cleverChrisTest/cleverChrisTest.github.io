@@ -22,37 +22,42 @@ export let arr = [
 export let languages = [
     {
         title: "HTML",
-        img: "'https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/html.png', 'html logo'",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/html.png', 'html logo'],
         description: "2 años"
     },
     {
         title: "CSS",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/css.png', 'css logo'],
         description: "2 año"
     },
     {
         title: "Javascript",
-        img: "['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/javascript.png', 'javascript logo']",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/javascript.png', 'javascript logo'],
         description: "1 año"
     },
     {
         title: "Java",
-        img: "['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/Sin%20t%C3%ADtulo.png', '']",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/Sin%20t%C3%ADtulo.png', ''],
         description: "Clases, objetos, herencia, tipos de datos, genéricos y paquetes. Excepciones, entrada/salida básica, concurrencia, expresiones regulares y el entorno de la plataforma. Expersiones lambda."
     },
     {
         title: "Spring Framework",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/spring.webp', ''],
         description: "1 mes"
     },
     {
         title: "Spring Data",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/spring.webp', ''],
         description: "1 mes"
     },
     {
         title: "Spring Security",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/spring.webp', ''],
         description: "1 mes"
     },
     {
         title: "Vue.js",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/vue.png', ''],
         description: "Conceptos básicos de Vuejs."
     }
 
