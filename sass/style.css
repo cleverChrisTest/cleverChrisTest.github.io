@@ -367,8 +367,7 @@ main .section-img {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
-  background-image: url(https://images.pexels.com/photos/979591/pexels-photo-979591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-color:var(--white-1);
   padding: 5rem 0;
   box-shadow: 0 1px 5px gray;
 }
@@ -673,7 +672,8 @@ footer a:visited {
   }
 
   main .section-content .content-media,
-  main .section-content .content-center {
+  main .section-content .content-center,
+  main .section-content .content-center-main {
     margin: 0;
     padding: 0;
   }
