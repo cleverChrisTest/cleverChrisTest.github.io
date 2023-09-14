@@ -22,42 +22,42 @@ export let arr = [
 export let languages = [
     {
         title: "HTML",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/html.png', 'html logo'],
+        img: ['./media/img/html.png', 'html logo'],
         description: "2 años"
     },
     {
         title: "CSS",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/css.png', 'css logo'],
+        img: ['./media/img/css.png', 'css logo'],
         description: "2 año"
     },
     {
         title: "Javascript",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/javascript.png', 'javascript logo'],
+        img: ['./media/img/javascript.png', 'javascript logo'],
         description: "1 año"
     },
     {
         title: "Java",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/java.png', ''],
+        img: ['./media/img/java.png', ''],
         description: "Clases, objetos, herencia, tipos de datos, genéricos y paquetes. Excepciones, entrada/salida básica, concurrencia, expresiones regulares y el entorno de la plataforma. Expersiones lambda."
     },
     {
         title: "Spring Framework",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/spring.webp', ''],
+        img: ['./media/img/spring.webp', ''],
         description: "Spring Data, Hibernate, configuración de parámetros, Spring Security, configuración de seguridad CRSF"
     },
     {
         title: "Vue.js",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/vue.png', ''],
+        img: ['./media/img/vue.png', ''],
         description: "Conceptos básicos de Vuejs."
     }, 
     {
         title: "PostgreSQL",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/postgre.png', ''],
+        img: ['./media/img/postgre.png', ''],
         description: "Gestión básica de PostgreSQL"
     },
     {
         title: "Oracle DataBase Express Edition 21c",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/oracle.png', ''],
+        img: ['./media/img/oracle.png', ''],
         description: "Conceptos básicos de Vuejs."
     }
 ];
