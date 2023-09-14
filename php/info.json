@@ -1,7 +1,7 @@
 [
     {
         "title": "HTML",
-        "img": "../media/html.png",
+        "img": "['../media/html.png', 'html logo'",
         "description": "2 años"
     },
     {
@@ -10,7 +10,7 @@
     },
     {
         "title": "Javascript",
-        "img": "../media/javascript.png",
+        "img": "['../media/javascript.png', 'javascript logo']",
         "description": "1 año"
     },
     {
