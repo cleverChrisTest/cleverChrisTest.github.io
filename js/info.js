@@ -22,7 +22,7 @@ export let arr = [
 export let languages = [
     {
         title: "HTML",
-        img: "['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/html.png', 'html logo'",
+        img: "'https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/html.png', 'html logo'",
         description: "2 años"
     },
     {
