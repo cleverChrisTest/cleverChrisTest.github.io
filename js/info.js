@@ -37,28 +37,27 @@ export let languages = [
     },
     {
         title: "Java",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/Sin%20t%C3%ADtulo.png', ''],
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/java.png', ''],
         description: "Clases, objetos, herencia, tipos de datos, genéricos y paquetes. Excepciones, entrada/salida básica, concurrencia, expresiones regulares y el entorno de la plataforma. Expersiones lambda."
     },
     {
         title: "Spring Framework",
         img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/spring.webp', ''],
-        description: "1 mes"
-    },
-    {
-        title: "Spring Data",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/spring.webp', ''],
-        description: "1 mes"
-    },
-    {
-        title: "Spring Security",
-        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/spring.webp', ''],
-        description: "1 mes"
+        description: "Spring Data, Hibernate, configuración de parámetros, Spring Security, configuración de seguridad CRSF"
     },
     {
         title: "Vue.js",
         img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/vue.png', ''],
         description: "Conceptos básicos de Vuejs."
+    }, 
+    {
+        title: "PostgreSQL",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/postgre.png', ''],
+        description: "Gestión básica de PostgreSQL"
+    },
+    {
+        title: "Oracle DataBase Express Edition 21c",
+        img: ['https://raw.githubusercontent.com/cleverChrisTest/cleverChrisTest.github.io/main/media/oracle.png', ''],
+        description: "Conceptos básicos de Vuejs."
     }
-
 ];

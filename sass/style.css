@@ -70,6 +70,13 @@
   font-family: "Overpass", sans-serif;
 }
 
+.title-style-3 {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-family: "Overpass", sans-serif;
+  color: var(--primary-dark);
+}
+
 .text-center {
   text-align: center;
 }
@@ -391,7 +398,6 @@ main .section-img .main-wrapper .jumbotron {
 main .section-img .main-wrapper .jumbotron p {
   font-size: var(--text-medium);
   font-weight: bold;
-  color: var(--black-1);
   margin-bottom: 3rem;
 }
 
