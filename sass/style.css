@@ -357,7 +357,7 @@ main {
   align-items: center;
 }
 
-main section {
+main article {
   width: 100%;
   min-height: 65vh;
   padding: 0 2rem;
@@ -394,7 +394,7 @@ main .section-img .main-wrapper .jumbotron {
   padding: 1rem 0;
   z-index: 1;
 }
-
+section
 main .section-img .main-wrapper .jumbotron p {
   font-size: var(--text-medium);
   font-weight: bold;
@@ -510,7 +510,7 @@ footer {
   color: var(--color-footer);
 }
 
-footer section {
+footer article {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -520,17 +520,17 @@ footer section {
   width: 100%;
 }
 
-footer section article {
+footer article section {
   padding: 1rem 0;
   width: 10rem;
 }
 
-footer section article h5 {
+footer article section h5 {
   font-size: 1rem;
   margin: 0;
 }
 
-footer section article ul {
+footer article sectionul {
   padding: 0;
 }
 

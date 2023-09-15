@@ -22,7 +22,7 @@ function init() {
 
     scrollEffect();
     scrollUpButtonEffect();
-
+    fecthUrl("https://cleverchristest.github.io/second.html", (data) => console.log(data))
 };
 
 window.addEventListener('load', init);

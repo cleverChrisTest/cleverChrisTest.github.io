@@ -3,7 +3,7 @@ export function scrollEffect(){
         const pos = document.querySelector("header").getBoundingClientRect().top;
         let start = document.getElementById("scrollUpButton");
 
-        const contenido = document.querySelectorAll("section");
+        const contenido = document.querySelectorAll("article");
 
         contenido.forEach(element => {
             const contenidoPos = element.getBoundingClientRect().top;
