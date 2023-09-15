@@ -687,12 +687,17 @@ footer a:visited {
 
   main .section-content .content-media .media-text {
     width: 100%;
-    margin: 0 1rem;
+    margin: 0 0rem;
   }
 
-  .form-group input,
-  .form .form-group textarea {
+  .form-group input {
     width: 80vw;
+  }
+
+  .form-group textarea {
+    min-width: unset;
+    max-width: unset;
+    height: unset;
   }
 
   .d-none-sm {
