@@ -1,7 +1,7 @@
 import { fecthUrl } from './funciones.js';
 import { createCardGroup } from './cardGenerator.js';
-import { scrollEffect, scrollUpButtonEffect } from './scrollEffect.js';
-import { arr, languages } from './info.js';
+import { scroll } from './scrollEffect.js';
+import { arr, languages } from '../php/info.js';
 
 function loadKnowledgeSection() {
 
@@ -20,9 +20,9 @@ function init() {
     tarjetas.append(createCardGroup(arr));
     document.querySelectorAll("section")[0].classList.add("mostrar");
 
-    scrollEffect();
-    scrollUpButtonEffect();
-    fecthUrl("./second.php", (data) => console.log(data))
+    scroll.setAnimation();
+
+    //fecthUrl("./second.php", (data) => console.log(data))
 };
 
 window.addEventListener('load', init);
