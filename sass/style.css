@@ -14,6 +14,11 @@
   --text-medium: 1.5rem;
 }
 
+.link-dark, .link-dark:visited {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+
 #scrollUpButton {
   display: flex;
   align-items: center;
@@ -536,7 +541,7 @@ footer article sectionul {
   padding: 0;
 }
 
-footer section article ul li {
+footer article section ul li {
   list-style-type: none;
   font-size: small;
   line-height: 2rem;
@@ -713,11 +718,12 @@ footer a:visited {
     min-width: 75vw;
   }
 
-  footer section article {
-    text-align: center;
+  footer article section {
     width: 15rem;
   }
-
+  footer article section h5 {
+    text-align: center;
+  }
   footer .footer-social {
     flex-direction: column;
   }
