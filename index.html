@@ -39,8 +39,8 @@
     <main>
         <article id="perfil" class="section-img">
             <div class="main-wrapper">
-                <video autoplay muted loop id="myVideo">
-                    <source src="./media/video/presentation.mp4" type="video/mp4">
+                <video autoplay muted loop id="myVideo" playback-rate>
+                    <source src="./media/video/stars.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
                 <div class="jumbotron">
@@ -184,11 +184,12 @@
         </section>
     </footer>
     <script>
+
         /**
- * Select the textarea element.
- */
+         * Select the textarea element.
+         */
         const textAreaElement = document.querySelector("#message");
-        
+
         /**
          * Select the character counter element.
          */
@@ -241,6 +242,7 @@
             }
         });
     </script>
+    <script src="./js/playrate.js" type="text/javascript"></script>
 </body>
 
 </html>

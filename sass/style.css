@@ -34,6 +34,10 @@
   bottom: 2rem;
 }
 
+.list-group {
+  padding: 1rem;
+}
+
 .title-primary {
   font-size: 3rem;
   color: var(--primary-dark);
@@ -74,7 +78,7 @@
   font-size: 1.5rem;
   letter-spacing: 4px;
   font-family: "Overpass", sans-serif;
-  color: var(--primary-dark);
+  color: var(--white-1);
 }
 
 .text-center {
@@ -254,11 +258,8 @@ table tr:nth-child(2n) {
 }
 
 .card .card-text {
+  font-size: 1.3rem;
   padding: 1rem 1rem;
-}
-
-.card .card-text p {
-  padding: 0 1rem;
 }
 
 .card .card-footer {
@@ -419,8 +420,9 @@ main .section-img .main-wrapper .img-main {
   position: fixed;
   right: 0;
   top: 0rem;
-  min-width: 100%;
   min-height: 100%;
+  min-width: 100%;
+  width: 100%;
   z-index: 0;
   animation: fade-out 1s;
 }
@@ -570,9 +572,7 @@ footer a:visited {
     padding: 0 1rem;
   }
 
-  main .card-group .card {
-    flex-basis: 30%;
-  }
+  
 
   main .section-content .content-media {
     flex-direction: column;
@@ -621,9 +621,6 @@ footer a:visited {
     padding: 0 1rem;
   }
 
-  main .card-group .card {
-    flex-basis: 45%;
-  }
 
   main .section-content .content-media {
     flex-direction: column;
@@ -651,6 +648,9 @@ footer a:visited {
 }
 
 @media (max-width: 750px) {
+  #myVideo {
+    width: unset;
+  }
   nav .container-fluid {
     display: none;
   }
@@ -670,7 +670,6 @@ footer a:visited {
   }
 
   main .card-group .card {
-    flex-basis: 100%;
     width: 100%;
   }
 

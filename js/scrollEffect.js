@@ -11,13 +11,13 @@ export let scroll = {
             }
         });
     },
-    setAnimation: function() {
+    setAnimation: function (){
         const content = document.querySelectorAll("article");
         content.item(0).classList.add("mostrar");
 
         this.addRestartButton();
 
-        window.addEventListener("scroll", () => {
+        return window.addEventListener("scroll", () => {
             
 
             content.forEach(element => {

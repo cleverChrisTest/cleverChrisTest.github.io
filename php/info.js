@@ -23,17 +23,22 @@ export let languages = [
     {
         title: "HTML",
         img: ['./media/img/html.png', 'html logo'],
-        description: "2 años"
+        description: "Metadata, conceptos fundamentales, depuración de HTML, tablas, listas..."
     },
     {
         title: "CSS",
         img: ['./media/img/css.png', 'css logo'],
-        description: "2 año"
+        description: "Animaciones, estilos, flexbox, grid"
     },
     {
         title: "Javascript",
         img: ['./media/img/javascript.png', 'javascript logo'],
-        description: "1 año"
+        description: "funciones, funciones asíncronas, API Fetch"
+    },
+    {
+        title: "Bootstrap",
+        img: ['./media/img/bootstrap.png', 'bootstrap logo'],
+        description: "Sistema grid, botones, barras de navegación, links, texto..."
     },
     {
         title: "Java",
