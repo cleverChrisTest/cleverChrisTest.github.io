@@ -7,14 +7,15 @@
     <title>Web ejemplo</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./sass/style.css">
-    <script src="js/index.js" type="module"></script>
+    <link rel="stylesheet" href="./sass/cookiebanner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="..." crossorigin="anonymous" />
+    <script src="js/index.js" type="module"></script>
 
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="blur">
         <nav class="navbar">
             <div class="navbar-social">
                 <div class="navbar-social-container">
@@ -36,7 +37,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="blur">
         <article id="perfil" class="section-img">
             <div class="main-wrapper">
                 <video autoplay muted loop id="myVideo" playback-rate>
@@ -126,7 +127,7 @@
             </section>
         </article>
     </main>
-    <footer>
+    <footer class="blur">
         <article class="border-bottom-1">
             <section class="footer-social ">
                 <div>
@@ -183,64 +184,39 @@
                 issues.</p>
         </section>
     </footer>
-    <script>
+    <div class="cookie-banner-container">
+        <div class="cookie-consent-banner">
+            <div class="cookie-consent-banner__inner">
+                <div class="cookie-consent-banner__copy">
+                    <div class="cookie-consent-banner__header">POLÍTICA DE COOKIES</div>
+                    <div class="cookie-consent-banner__description">
+                        <p>
+                            Utilizamos cookies para personalizar el contenido y los anuncios, para proporcionar caraterísticas
+                            en redes sociales y analizar nuestro tráfico. Además compartimos información sobre el uso que realizas
+                            en esta web con nuestra red social, anunciantes y empresas de estudios anlaíticos que puede ser combinada
+                            con la información que ellos pueden poseer sobre ti a través de tus interacciones con otros servicios en internet
+                            que ellos gestionen.
+                        </p>
+                        <p>
+                            Puedes consentir o rechazar que nosotros y nuestros socios recopilemos esa información.
+                        </p>
+                    </div>
+                </div>
 
-        /**
-         * Select the textarea element.
-         */
-        const textAreaElement = document.querySelector("#message");
+                <div class="cookie-consent-banner__actions">
+                    <a href="#" id="confirm" class="cookie-consent-banner__cta">
+                        Aceptar
+                    </a>
 
-        /**
-         * Select the character counter element.
-         */
-        const characterCounterElement = document.querySelector("#character-counter");
-        /**
-         * Select the element that shows the number of characters typed in the textarea.
-         */
-        const typedCharactersElement = document.querySelector("#typed-characters");
-        /**
-         * Define the maximum number of characters allowed.
-         */
-        const maximumCharacters = 300;
-        /**
-         * Set attribute maxLength on textarea element
-        */
-        textAreaElement.setAttribute("maxLength", maximumCharacters);
-        textAreaElement.setAttribute("placeholder", `Máximo ${maximumCharacters} caracteres.`);
-        /**
-         * Set inner information on element with id maximumCharacters.
-         * */
-        const maxElement = document.getElementById("maximum-characters");
-        maxElement.innerHTML = maximumCharacters;
-        /**
-         * Add a "keyup" event listener on the textarea element.
-         */
-        textAreaElement.addEventListener("keyup", (event) => {
-            /**
-             * Count the number of characters typed.
-             */
-            const typedCharacters = textAreaElement.value.length;
-            /**
-             * Check if the typed characters is more than allowed characters limit.
-             * If yes, then return false.
-             */
-            if (typedCharacters > maximumCharacters) {
-                return false;
-            }
-            /**
-             * Display the number of characters typed.
-             */
-            typedCharactersElement.textContent = typedCharacters;
-            /**
-             * Change the character counter text colour to "orange" if the typed
-             * characters number is between 200 to 250. If more, then change the colour to "red".
-             */
-            if (typedCharacters >= 200 && typedCharacters < 250) {
-                characterCounterElement.classList = "text-warning";
-            } else if (typedCharacters >= 250) {
-                characterCounterElement.classList = "text-danger";
-            }
-        });
+                    <a href="#" id="decline" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary">
+                        Rechazar todo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/banner.js" type="text/javascript"></script>
+    <script src="./js/lettercounter.js" type="text/javascript">
     </script>
     <script src="./js/playrate.js" type="text/javascript"></script>
 </body>
