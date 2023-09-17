@@ -1,9 +1,9 @@
 :root {
-  --primary-banner-bg: #F1F2F6;
-  --primary-banner-btn-bg: #3A2CE0;
-  --primary-banner-btn-bg-light: #4f42df;
+  --primary: #33b6b4;
+  --primary-dark: #237c7b;
+  --primary-banner-bg: #deecec;
   --light-text: #fff;
-  --primary-text: #3A2CE0;
+  --primary-text: #33b6b4;
   --border-secondary: #9f9f9f;
 }
 
@@ -66,13 +66,18 @@
   overflow: scroll;
 }
 
+.cookie-consent-banner__description .banner-link, 
+.cookie-consent-banner__description .banner-link:visited {
+  color: var(--primary-dark);
+}
+
 .cookie-consent-banner__cta {
   box-sizing: border-box;
   display: inline-block;
   width: 164px;
   padding: 11px 13px;
   border-radius: 15px;
-  background-color: var(--primary-banner-btn-bg);
+  background-color: var(--primary);
   color: var(--light-text);
   text-decoration: none;
   text-align: center;
@@ -90,7 +95,7 @@
 }
 
 .cookie-consent-banner__cta:hover {
-  background-color: var(--primary-banner-btn-bg-light);
+  background-color: var(--primary-dark);
 }
 
 .cookie-consent-banner__cta--secondary:hover {

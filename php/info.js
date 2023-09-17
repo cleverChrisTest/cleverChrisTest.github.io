@@ -63,6 +63,6 @@ export let languages = [
     {
         title: "Oracle DataBase Express Edition 21c",
         img: ['./media/img/oracle.png', ''],
-        description: "Conceptos básicos, creación de procedimientos, funciones y triggers."
+        description: "Conceptos básicos, creación de procedimientos, funciones y disparadores."
     }
 ];
