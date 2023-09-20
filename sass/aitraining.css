@@ -1,0 +1,38 @@
+main {
+  padding: 2rem 1rem;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.webcam-container-custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(214, 214, 214);
+  border-radius: 1rem;
+  height: 52vh;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+canvas{
+  border-radius: 1rem;
+}
+
+@media (max-width: 750px){
+  .webcam-container-custom{
+    flex-direction: column;
+  }
+}
