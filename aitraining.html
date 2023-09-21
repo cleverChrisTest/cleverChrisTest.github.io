@@ -116,10 +116,11 @@
             for (let i = 0; i < maxPredictions; i++) {
                 const classPrediction =
                     prediction[0] + ": " + prediction[i].probability.toFixed(2);
-                labelContainer.childNodes[i].appendChild(createProgress(prediction, i));
+                labelContainer.childNodes[i].innerHTML = classPrediction;
             }
         }
 
+        /**Fix this function*/
         function createProgress(prediction, i){
             let div = document.createElement("div");
             div.classList.add("progress");
