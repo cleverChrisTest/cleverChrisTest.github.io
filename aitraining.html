@@ -28,7 +28,8 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://teachablemachine.withgoogle.com/">Teachable machine webpage</a>
+                            <a class="nav-link" href="https://teachablemachine.withgoogle.com/">Teachable machine
+                                webpage</a>
                         </li>
                     </ul>
                 </div>
@@ -79,7 +80,8 @@
                 maxPredictions = model.getTotalClasses();
 
                 // Convenience function to setup a webcam
-                const flip = false; // whether to flip the webcam
+                const flip = true; // whether to flip the webcam
+
                 webcam = new tmImage.Webcam(300, 300, flip); // width, height, flip
                 await webcam.setup({ facingMode: "environment" }); // request access to the webcam
                 await webcam.play();
@@ -88,9 +90,8 @@
                 // append elements to the DOM
                 document.getElementById("webcam-container").appendChild(webcam.canvas);
                 labelContainer = document.getElementById("label-container");
-                for (let i = 0; i < maxPredictions; i++) { // and class labels
-                    labelContainer.appendChild(document.createElement("div"));
-                }
+                
+                createProgressBar(maxPredictions);
 
                 state = true;
 
@@ -116,21 +117,20 @@
             for (let i = 0; i < maxPredictions; i++) {
                 const classPrediction =
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-                labelContainer.childNodes[i].innerHTML = classPrediction;
+                //labelContainer.childNodes[i].innerHTML = classPrediction;
+                labelContainer.childNodes[i].innerHTML = `
+                    <div class="progress-bar" role="progressbar" style="width:${prediction[i].probability * 100}%">
+                        ${prediction[i].probability.toFixed(2)}
+                    </div>`;
             }
         }
 
-        /**Fix this function*/
-        function createProgress(prediction, i){
-            let div = document.createElement("div");
-            div.classList.add("progress");
-            let bar = document.createElement("div");
-            bar.classList.add("progress-bar");
-            bar.setAttribute("role", "progressbar");
-            bar.style.width = prediction[i];
-            bar.innerHTML = prediction[i];
-            div.appendChild(bar);
-            return div;
+        function createProgressBar(maxPredictions) {
+            for (let i = 0; i < maxPredictions; i++) { // and class labels
+                let div = document.createElement("div");
+                div.classList.add("progress");
+                labelContainer.appendChild(div);
+            }
         }
 
         function stop() {
