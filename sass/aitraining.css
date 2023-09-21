@@ -34,6 +34,18 @@ main {
   width: 50%;
 }
 
+.progress-container div{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.progress-container div div:first-child{
+  width: 200px;
+}
+
+
 canvas{
   border-radius: 1rem;
   width: 100%;

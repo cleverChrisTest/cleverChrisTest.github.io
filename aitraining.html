@@ -90,7 +90,7 @@
                 // append elements to the DOM
                 document.getElementById("webcam-container").appendChild(webcam.canvas);
                 labelContainer = document.getElementById("label-container");
-                
+
                 createProgressBar(maxPredictions);
 
                 state = true;
@@ -118,17 +118,28 @@
                 const classPrediction =
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
                 //labelContainer.childNodes[i].innerHTML = classPrediction;
-                labelContainer.childNodes[i].innerHTML = `
-                    <div class="progress-bar" role="progressbar" style="width:${prediction[i].probability * 100}%">
-                        ${prediction[i].probability.toFixed(2)}
-                    </div>`;
+                labelContainer.childNodes[i].innerHTML = createHTML(prediction, i);
             }
+        }
+
+        function createHTML(prediction, i) {
+            const htmlString = `
+                    <div>${prediction[i].className}<div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:${prediction[i].probability * 100}%">
+                            ${prediction[i].probability.toFixed(2)}
+                        <div>
+                    </div>`;
+            
+            /*        const parser = new DOMParser();
+            const html = parser.parseFromString(htmlString, 'text/html');*/
+            return htmlString;
         }
 
         function createProgressBar(maxPredictions) {
             for (let i = 0; i < maxPredictions; i++) { // and class labels
                 let div = document.createElement("div");
-                div.classList.add("progress");
+                div.classList.add("progress-container");
                 labelContainer.appendChild(div);
             }
         }
