@@ -16,6 +16,6 @@ function removeBanner(event) {
 [confirm, decline].forEach(element =>{
     element.addEventListener("click", removeBanner);
     if(element === confirm){
-        console.log("Yes!");
+        /*Cookie creation here*/
     }
 });

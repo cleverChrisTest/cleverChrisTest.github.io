@@ -1,24 +1,27 @@
-import { fecthUrl } from './funciones.js';
 import { createCardGroup } from './cardGenerator.js';
 import { scroll } from './scrollEffect.js';
 import { arr, languages } from '../php/info.js';
 
 function loadKnowledgeSection() {
+    let infoTable = document.getElementById('infoTable');
 
-    let infoTable = document.getElementById("infoTable");
-
-    let table = createCardGroup(languages);
-    table.classList.add("table", "table-dark");
-    infoTable.appendChild(table);
+    if(infoTable != null){
+        let table = createCardGroup(languages);
+        table.classList.add("table", "table-dark");
+        infoTable.appendChild(table);
+    }
+    
 }
 
 function init() {
-
-
     loadKnowledgeSection();
+    let tarjetas = document.getElementById('tarjetas');
 
-    tarjetas.append(createCardGroup(arr));
-    document.querySelectorAll("section")[0].classList.add("mostrar");
+    if(tarjetas !== null){
+        tarjetas.append(createCardGroup(arr));
+    }
+    
+    document.querySelectorAll("article")[0].classList.add("mostrar");
 
     scroll.setAnimation();
 
