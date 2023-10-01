@@ -356,12 +356,39 @@ main {
 }
 main article {
   width: 100%;
-  min-height: 65vh;
   padding: 0 2rem;
   opacity: 0;
   transform: translateY(2rem);
   transition: opacity 1s, transform 1s;
   background-color: var(--white-1);
+  min-height: 80vh;
+}
+main article #myVideo {
+  position: fixed;
+  right: 0;
+  top: 0rem;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  z-index: 0;
+  animation: fade-out 1s;
+}
+main .experience-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+main .experience-content div {
+  flex-basis: 50%;
+}
+main .experience-content div section {
+  padding: 2rem;
+}
+main .experience-content div:nth-child(2) {
+  background-color: var(--primary);
+}
+main .experience-content div:nth-child(3n) {
+  background-color: var(--primary);
 }
 main .section-img {
   background-position: top center;
@@ -454,21 +481,10 @@ main #ciudades {
   transform: translateY(0);
 }
 
-section main .section-img .main-wrapper .jumbotron p {
+main .section-img .main-wrapper .jumbotron p {
   font-size: var(--text-medium);
   font-weight: bold;
   margin-bottom: 3rem;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  top: 0rem;
-  min-height: 100%;
-  min-width: 100%;
-  width: 100%;
-  z-index: 0;
-  animation: fade-out 1s;
 }
 
 .anim-fade-out {
