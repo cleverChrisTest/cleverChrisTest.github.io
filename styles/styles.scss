@@ -17,14 +17,6 @@ $background-color_7: #ffffff;
 $background-color_8: var(--bg-cards);
 $background-color_9: var(--bg-footer);
 
-@keyframes fade-out {
-    to {
-        opacity: 0;
-    }
-}
-
-
-
 .link-dark {
     text-decoration: none;
     color: $color_1;
@@ -426,29 +418,24 @@ main {
             top: 0rem;
             min-height: 100%;
             min-width: 100%;
-            width: 100%;
             z-index: 0;
             animation: fade-out 1s;
+        }
+
+        @keyframes fade-out {
+            to {
+                opacity: 0;
+            }
         }
     }
 
     .experience-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 8 columnas */
+        grid-template-rows: repeat(1, 1fr); /* 8 filas */
+        height: 20vh;
 
-        div {
-            flex-basis: 50%;
-
-            section {
-                padding: 2rem;
-            }
-        }
-
-        div:nth-child(2) {
-            background-color: var(--primary);
-        }
-        div:nth-child(3n) {
+        section{
             background-color: var(--primary);
         }
     }

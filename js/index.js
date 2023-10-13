@@ -1,6 +1,5 @@
 import { createCardGroup } from './cardGenerator.js';
 import { scroll } from './scrollEffect.js';
-import { arr, languages } from '../php/info.js';
 
 function loadKnowledgeSection() {
     let infoTable = document.getElementById('infoTable');
@@ -14,18 +13,9 @@ function loadKnowledgeSection() {
 }
 
 function init() {
-    loadKnowledgeSection();
-    let tarjetas = document.getElementById('tarjetas');
-
-    if(tarjetas !== null){
-        tarjetas.append(createCardGroup(arr));
-    }
-    
+    /*Sroll effect*/
     document.querySelectorAll("article")[0].classList.add("mostrar");
-
     scroll.setAnimation();
-
-    //fecthUrl("./second.php", (data) => console.log(data))
 };
 
 window.addEventListener('load', init);
