@@ -1,0 +1,95 @@
+:root{
+    --primary-color: #69b9ff;
+    --secondary-color: #badcfa;
+    --terciary-color: #195183;
+    --cuaternary-color: #fff;
+    --font-size-parragraph: 1.5rem;
+}
+
+* {
+    font-family: 'Mukta', sans-serif;
+}
+
+body > div {
+    min-height: 100vh;
+}
+
+.text-color-1 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-custom{
+    color: var(--cuaternary-color);
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    min-width: 12rem;
+    font-size: var(--font-size-parragraph);
+    transition: background-color 1s;
+}
+
+.btn-custom:hover{
+    background-color: var(--secondary-color);
+}
+
+.f1 {
+    font-size: 6rem;
+    color: var(--cuaternary-color);
+    width: 80%;
+}
+
+article{
+    min-height: 90vh;
+}
+
+section{
+    flex: 1;
+}
+
+#main-inicio article:nth-child(1) {
+    background-image: url("../media/gym1.jpg");
+    background-size: cover;
+}
+
+#servicios article:nth-child(1) {
+    background-image: url("../media/gym1.jpg");
+    background-size: cover;
+}
+
+#servicios article:nth-child(2) {
+    background-image: url("../media/gym2.jpg");
+    background-size: cover;
+}
+
+#servicios article:nth-child(2) p{
+    background-color: var(--cuaternary-color);
+    color: #3b3b3b;
+}
+
+#servicios article:nth-child(3) {
+    background-image: url("../media/gym4.jpg");
+    background-size: cover;
+    background-position-y: -13rem;
+}
+
+#servicios article:nth-child(3) p{
+    color: #3b3b3b;
+}
+
+.card-custom{
+}
+
+.card-custom .card-img > img {
+    width: 20vh;
+    height: 20vh;
+}
+.bg-terciary-custom, .bg-terciary-custom span{
+    color: var(--cuaternary-color);
+    background-color: var(--terciary-color);
+}
+
+.list-group-flush li {
+    color: var(--secondary-color);
+    background-color: var(--terciary-color);
+}
