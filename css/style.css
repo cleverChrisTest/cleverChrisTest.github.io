@@ -59,6 +59,15 @@ body > div {
     transition: background-color 1s;
 }
 
+.btn-custom-sm{
+    color: var(--cuaternary-color);
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--primary-color);
+    min-width: 12rem;
+    transition: background-color 1s;
+}
+
 .btn-custom:hover{
     background-color: var(--secondary-color);
 }
